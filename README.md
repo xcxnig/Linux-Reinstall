@@ -52,6 +52,8 @@ bash DebianNET.sh -u xenial -v 64 -a
 
 --mirror 'http://ftp.riken.jp/Linux/debian/debian/'
 --mirror 'http://mirrors.ustc.edu.cn/debian/'
+
+
 [2017.06.24]
 由公网探测IP地址,改为本机探测IP地址.适配更加广泛.
 
@@ -101,10 +103,13 @@ bash DebianNET.sh -u xenial -v 64 -a
 
 
 #Debian/Ubuntu:
+
 apt-get install -y gawk sed grep
  
 #RedHat/CentOS:
+
 yum install -y gawk sed grep
+
 如果出现了错误,请运行:
 
 
@@ -137,20 +142,28 @@ Usage:
 
 
 bash DebianNET.sh -d wheezy -v i386 -a
+
 VNC手动安装:
 
 
 bash DebianNET.sh -d wheezy -v i386 -m
+
 全自动安装(指定网络参数):
 
 
 
 # 将X.X.X.X替换为自己的网络参数.
+
 # --ip-addr :IP Address/IP地址
+
 # --ip-gate :Gateway   /网关
+
 # --ip-mask :Netmask   /子网掩码
+
 #bash DebianNET.sh -d wheezy -v i386 -a --ip-addr X.X.X.X --ip-mask X.X.X.X --ip-gate X.X.X.X
+
 使用示例:
+
 【默认】安装Debian 7 x32：
 
 bash DebianNET.sh -d wheezy -v i386
