@@ -48,8 +48,8 @@ bash DebianNET.sh -u xenial -v 64 -a
 添加-apt/--mirror参数,用于指定源(需完整的镜像源地址).
 用法示例:
 
-1
-2
+
+
 --mirror 'http://ftp.riken.jp/Linux/debian/debian/'
 --mirror 'http://mirrors.ustc.edu.cn/debian/'
 [2017.06.24]
@@ -156,22 +156,27 @@ bash DebianNET.sh -d wheezy -v i386 -m
 bash DebianNET.sh -d wheezy -v i386
 
 bash DebianNET.sh -d 7 -v 32
+
 安装Debian 8 x64：
 
 bash DebianNET.sh -d jessie -v amd64
 
 bash DebianNET.sh -d 8 -v 64
+
 安装Debian 9 x64：
 
 bash DebianNET.sh -d stretch -v amd64
 
 bash DebianNET.sh -d 9 -v 64
+
 安装Ubuntu 14.04 x64：
 
 bash DebianNET.sh -u trusty -v 64
+
 安装Ubuntu 16.04 x64：
 
 bash DebianNET.sh -u xenial -v 64
+
 安装Ubuntu 18.04 x64：
 
 bash DebianNET.sh -u bionic -v 64
